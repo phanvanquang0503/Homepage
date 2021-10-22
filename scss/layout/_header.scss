@@ -1,0 +1,56 @@
+@import "../abstracts/variable";
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 60px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  z-index: 10000;
+  background-color: black;
+  .logo {
+    img {
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    li:first-child {
+      border-bottom: 2px solid $color-main;
+    }
+    li:not(:first-child) {
+      margin-left: 60px;
+      a {
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 2px;
+          background-color: $color-main;
+          transition: width 0.5s cubic-bezier(0.71, -0.34, 0.47, 1.79);
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+    li {
+      list-style: none;
+      a {
+        font {
+          font-family: "Roboto", sans-serif;
+          size: 14px;
+          font-weight: bold;
+        }
+        text-decoration: none;
+        color: #ffff;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
