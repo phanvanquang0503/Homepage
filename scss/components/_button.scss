@@ -1,0 +1,20 @@
+@import "../abstracts/variable";
+@import "../abstracts/mixin";
+@import "../base/animate";
+.button {
+  border: none;
+  padding: 11px 44px;
+  outline: none;
+  cursor: pointer;
+  color: #ffff;
+  transition: color 0.4s linear;
+  position: relative;
+  text-decoration: none;
+}
+.button#{$slide-active} {
+  @include boder-color($slide-active);
+}
+.button#{$slide} {
+  @include boder-color($slide);
+  @include animation-button($slide);
+}

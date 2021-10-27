@@ -1,0 +1,31 @@
+@import "../abstracts/variable";
+// clearfix
+@mixin clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// button
+@mixin boder-color($pos) {
+  @if $pos == $slide {
+    background-color: transparent;
+    color: #ededed;
+    border: 2px solid $color-main;
+  } @else if $pos == $slide-active {
+    background-color: $color-main;
+    color: #ffff;
+    border: 2px solid $color-main;
+    margin-right: 30px;
+    padding: 11px 54px;
+    text-decoration: none;
+  }
+}
+//FEATURES
+@mixin feature__block--color($sta) {
+  @if $sta == $features-active {
+    background-color: $color-main;
+  } @else if $sta == $features {
+    background-color: $color-second;
+  }
+}
