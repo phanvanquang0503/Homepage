@@ -19,6 +19,10 @@
     margin-right: 30px;
     padding: 11px 54px;
     text-decoration: none;
+  } @else if $pos == $bussiness {
+    background-color: transparent;
+    color: #ffff;
+    border: 2px solid #ffff;
   }
 }
 //FEATURES
@@ -27,5 +31,27 @@
     background-color: $color-main;
   } @else if $sta == $features {
     background-color: $color-second;
+  }
+}
+// minxin image
+@mixin bussiness-img($ind, $url, $height, $size, $pos, $mg-l, $mgtb) {
+  @if $ind ==1 {
+    width: 255px;
+    height: $height;
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: auto $size;
+    background-position: $pos;
+    margin-left: $mg-l;
+    margin: $mgtb 0;
+  } @else if $ind==2 {
+    width: 255px;
+    height: $height;
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: auto $size;
+    background-position: $pos;
+    margin-left: $mg-l;
+    margin: $mgtb $m;
   }
 }

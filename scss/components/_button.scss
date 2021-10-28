@@ -18,3 +18,8 @@
   @include boder-color($slide);
   @include animation-button($slide);
 }
+// BUTTON BUSSINESS
+.button#{$bussiness} {
+  @include boder-color($bussiness);
+  @include animation-button($bussiness);
+}
