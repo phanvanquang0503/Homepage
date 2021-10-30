@@ -23,6 +23,15 @@
     background-color: transparent;
     color: #ffff;
     border: 2px solid #ffff;
+  } @else if $pos ==$trusted {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+  } @else if $pos == $form {
+    background-color: $color-main;
+    color: $text__color-white;
+    border-style: none;
+    width: 100%;
   }
 }
 //FEATURES

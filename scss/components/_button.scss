@@ -23,3 +23,12 @@
   @include boder-color($bussiness);
   @include animation-button($bussiness);
 }
+// button trusted
+.button#{$trusted} {
+  @include boder-color($trusted);
+  @include animation-button($trusted);
+}
+// button form
+.button#{$form} {
+  @include boder-color($form);
+}

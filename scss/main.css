@@ -140,8 +140,45 @@ body {
 }
 .button__bussiness:hover::before {
   transform: scaleX(1);
-  color: #fff !important;
+  color: #202b30 !important;
   z-index: -1;
+}
+
+.button__trusted {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #000;
+}
+.button__trusted:hover {
+  color: #ffff !important;
+  text-decoration: none;
+}
+.button__trusted::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 101%;
+  height: 101%;
+  background: #202b30;
+  z-index: 1;
+  transition: transform 0.9s;
+  transition-timing-function: ease;
+  transform-origin: 0 0;
+  transition-timing-function: linear;
+  transform: scaleX(0);
+}
+.button__trusted:hover::before {
+  transform: scaleX(1);
+  color: #ffff !important;
+  z-index: -1;
+}
+
+.button__form {
+  background-color: #fb414e;
+  color: #ffff;
+  border-style: none;
+  width: 100%;
 }
 
 #section__01 {
@@ -430,4 +467,241 @@ body {
   height: 0;
   padding: 0;
   transition: all 0.5s ease;
+}
+
+#section__07 .banner__light {
+  width: 100%;
+  height: auto;
+}
+#section__07 .banner__light .trusted__text {
+  text-align: left;
+  padding: 90px 0;
+  color: #000;
+}
+#section__07 .banner__light .trusted__text--title {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+#section__07 .banner__light .trusted__text--contnet {
+  font-size: 13.5px;
+  display: inline-block;
+  margin-top: 40px;
+}
+#section__07 .banner__light .trusted__text .button__trusted {
+  text-decoration: none;
+  margin-top: 25px;
+  display: inline-block;
+  z-index: 10;
+}
+
+#section__08 {
+  width: 100%;
+  margin-bottom: 80px;
+}
+#section__08 .banner__darnk {
+  padding: 90px 0;
+  width: 100%;
+  background-color: #202b30;
+}
+#section__08 .banner__darnk .agencys {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+#section__08 .banner__darnk .agencys__item {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+#section__08 .banner__darnk .agencys__item img {
+  width: 70%;
+  height: auto;
+}
+#section__08 .crafted {
+  text-align: right;
+  color: #ffff;
+}
+#section__08 .crafted__title {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+#section__08 .crafted__content {
+  font-size: 13.5px;
+}
+
+#section__10 {
+  width: 100%;
+  margin-bottom: 80px;
+}
+#section__10 .aboutIt {
+  text-align: right;
+}
+#section__10 .aboutIt__title {
+  color: #000;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  vertical-align: top;
+}
+#section__10 .aboutIt__content {
+  color: #838383;
+  margin-bottom: 30px;
+  text-align: right;
+  font-size: 13px;
+  padding-left: 89px;
+}
+#section__10 .form__service {
+  width: 100%;
+  margin-top: 20px;
+}
+#section__10 .form__service input,
+#section__10 .form__service select,
+#section__10 .form__service textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  outline: none;
+  width: 100%;
+}
+#section__10 .form__service select {
+  padding: 15px 8px;
+  font-family: "Rotobo", sans-serif;
+  font-size: 13px;
+}
+#section__10 .form__service input:nth-child(2) {
+  padding: 10px;
+  display: inline;
+  float: left;
+  width: 47.5%;
+  margin-right: 15px;
+}
+#section__10 .form__service input:nth-child(3) {
+  padding: 11px;
+  display: inline;
+  width: 47.5%;
+  float: right;
+}
+#section__10 .form__service :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #000;
+  opacity: 1;
+  font-family: "Rotobo", sans-serif;
+  font-size: 13px;
+}
+#section__10 .form__service ::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  font-family: "Rotobo", sans-serif;
+  font-size: 13px;
+}
+#section__10 .form__service ::placeholder {
+  color: #000;
+  opacity: 1;
+  font-family: "Rotobo", sans-serif;
+  font-size: 13px;
+}
+
+footer {
+  color: #ffff;
+  background-color: #202b30;
+}
+footer .footer__1 {
+  padding-top: 80px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul li:first-child {
+  border-bottom: 2px solid #fb414e;
+}
+footer ul li:not(:first-child) {
+  margin-left: 50px;
+}
+footer ul li {
+  list-style: none;
+  flex-shrink: 0;
+}
+footer ul li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffff;
+  transition: all 0.3s ease;
+}
+footer .footer__2 {
+  margin-top: 90px;
+}
+footer .footer__2--contact .contact {
+  color: #ffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+footer .footer__2--address .address {
+  color: #eaeaeb;
+  font-family: "Roboto", sans-serif;
+  font-font-size: 14px;
+  font-font-weight: normal;
+}
+footer .footer__2--subscrible-title {
+  color: #ffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right;
+}
+footer .footer__2--subscrible-input {
+  width: 100%;
+}
+footer .footer__2--subscrible-input .formFooter {
+  width: 100%;
+}
+footer .footer__2--subscrible-input .formFooter input {
+  width: 80%;
+  border: none;
+  outline: none;
+  padding: 7px;
+  float: left;
+}
+footer .footer__2--subscrible-input .formFooter :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: "Rotobo", sans-serif;
+  font-size: 13px;
+}
+footer .footer__2--subscrible-input .formFooter ::-moz-placeholder {
+  font-family: "Rotobo", sans-serif;
+  font-size: 13px;
+}
+footer .footer__2--subscrible-input .formFooter ::placeholder {
+  font-family: "Rotobo", sans-serif;
+  font-size: 13px;
+}
+footer .footer__2--subscrible-input .formFooter .button__form--footer {
+  width: 20%;
+  border: none;
+  background: #fb414e;
+  color: #ffff;
+  padding: 7px;
+}
+footer .footer__3 {
+  margin-top: 70px;
+  padding-bottom: 40px;
+}
+footer .footer__3 .img-container img {
+  width: 15px;
+  height: auto;
+}
+footer .footer__3 .img-container img:not(:first-child) {
+  margin-left: 20px;
+}
+footer .footer__3--copyright {
+  color: #515b5d;
+  font-size: 13px;
+  text-align: right;
 }/*# sourceMappingURL=main.css.map */
